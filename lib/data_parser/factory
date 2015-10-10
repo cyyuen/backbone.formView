@@ -1,0 +1,14 @@
+DataParserFactory = {
+    get: function (dataType) {
+        switch (dataType) {
+            case "int":
+                return parseInt;
+            case "float":
+                return parseFloat;
+            default:
+                return function (v) { return v };
+        }
+    }
+};
+
+module.exports = DataParserFactory;

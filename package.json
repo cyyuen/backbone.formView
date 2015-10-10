@@ -1,0 +1,25 @@
+{
+  "name": "backbone.formview",
+  "version": "1.0.0",
+  "description": "backbone Form View: form model binding",
+  "main": "backbone.formView.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cyyuen/backbone.formView.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "backbone": "~1.x.x",
+    "browserify": "~2.x.x",
+    "jquery": "~2.1.0",
+    "uglify-js": "~1.2.6",
+    "underscore": ">=1.4.0"
+  },
+  "peerDependencies": {
+    "backbone": "~1.x.x"
+  },
+  "author": "Tony Yuen <colsy2@gmail.com>",
+  "license": "MIT"
+}
