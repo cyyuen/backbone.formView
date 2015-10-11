@@ -41,7 +41,16 @@
          */
         initialize: function (option) {
 
-            var schema = option.schema;
+            // initialize schema if it is not exist
+            this.schema || (this.schema = {});
+
+            // initialize option's schema if it is not exist
+            option.schema || (option.schema = {});
+
+            // the input schema has higher priority
+            _.extend(this.schema, option.schema);
+
+            var schema = this.schema;
 
             var events = {};
 
