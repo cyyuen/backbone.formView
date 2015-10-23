@@ -1,12 +1,13 @@
 {
   "env": {
     "browser": true,
-    "node": false
+    "node": true
   },
   "plugins": [
   ],
   "globals": {
-    "$": true
+    "$": true,
+    "__"
   },
   "rules": {
 
@@ -123,7 +124,7 @@
     "computed-property-spacing": [2, "never"],              // require or disallow padding inside computed properties (off by default)
     "consistent-this": [0, "useFatArrow"],                  // enforces consistent naming when capturing the current execution context (off by default)
     "eol-last": 2,                                          // enforce newline at the end of file, with no multiple empty lines
-    "func-names": 2,                                        // require function expressions to have a name (off by default)
+    "func-names": 0,                                        // require function expressions to have a name (off by default)
     "func-style": 0,                                        // enforces use of function declarations or expressions (off by default)
     "id-length": 0,                                         // this option enforces minimum and maximum identifier lengths (variable names, property names etc.) (off by default)
     "id-match": 0,                                          // require identifiers to match the provided regular expression
@@ -158,7 +159,7 @@
     }],
     "operator-assignment": [2, "always"],                   // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "operator-linebreak": [2, "before"],                    // enforce operators to be placed before or after line breaks (off by default)
-    "padded-blocks": [2, "never"],                          // enforce padding within blocks (off by default)
+    "padded-blocks": [0, "never"],                          // enforce padding within blocks (off by default)
     "quote-props": [2, "as-needed"],                        // require quotes around object literal property names (off by default)
     "quotes": [2, "single"],                                // specify whether backticks, double or single quotes should be used
     "require-jsdoc": 0,                                     // Require JSDoc comment
@@ -168,7 +169,7 @@
     "space-after-keywords": [2, "always"],                  // require a space after certain keywords (off by default)
     "space-before-keywords": [2, "always"],                 // require a space before certain keywords
     "space-before-blocks": [2, "always"],                   // require or disallow space before blocks (off by default)
-    "space-before-function-paren": [2, "never"],            // require or disallow space before function opening parenthesis (off by default)
+    "space-before-function-paren": [0, "always"],           // require or disallow space before function opening parenthesis (off by default)
     "space-in-parens": [2, "never"],                        // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 0, // TODO currently broken for default params                                   // require spaces around operators
     "space-return-throw-case": 2,                           // require a space after return, throw, and case
